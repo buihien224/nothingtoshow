@@ -1,0 +1,6 @@
+h = input()
+h1= h.split()
+h1 = list( set(h1) )
+h1.sort()
+h2 = ' '.join(h1)
+print(h2)
