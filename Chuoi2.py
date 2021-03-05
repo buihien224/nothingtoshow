@@ -1,15 +1,9 @@
 h= input ()
-right = 0
-wrong = 0
-check = h[0].isupper()
-if check == True : right = 1
-else : wrong = 1 
+if h[0].isupper() == True : right = 1 ; wrong = 0
+else : wrong = 1 ; right = 0
 for c in range(len(h)) :
 	if h[c] == " " : 
-		check = h[c+1].isupper()
-		if check == True : 
-			right+=1
+		if h[c+1].isupper() == True : right+=1
 		else : wrong +=1
 print ("right : " ,right , "wrong : " ,wrong)
-		
 		
