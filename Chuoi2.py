@@ -2,7 +2,7 @@ h= input ()
 if h[0].isupper() : 
 	right = 1 
 	wrong = 0
-elif h[0] == " " : 
+elif h[0].isspace() : 
 	right = 0 
 	wrong = 0
 else : 
